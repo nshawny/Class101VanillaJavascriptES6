@@ -47,3 +47,5 @@ const hobbies = ["game","programming","tv","youtube"];
 console.log(hobbies.join().split(","))
 const homework = "eng,kor,math,history"
 console.log(homework.split(",")[0])
+
+//String, Number, boolean, null, undefined, symbol
