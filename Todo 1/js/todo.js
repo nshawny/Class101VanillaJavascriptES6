@@ -49,11 +49,17 @@ const generateLike = () => {
     if (icon.innerText === 'favorite_border') {
       icon.innerText = "favorite"
       const li = e.target.parentNode.parentNode;
+      li.parentNode.removeChild(li)
+      console.log(li.parentNode)
       todoFavs.appendChild(li)
+      console.log(li.parentNode)
     } else{
       icon.innerText = "favorite_border"
       const li = e.target.parentNode.parentNode;
+      li.parentNode.removeChild(li)
+      console.log(li.parentNode)
       todoList.appendChild(li)
+      console.log(li.parentNode)
     }
   })
   //console.log(span)
