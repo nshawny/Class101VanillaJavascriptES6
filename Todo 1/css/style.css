@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  /*100퍼센트 뷰포트 하이트 (보이는 화면의)*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*세로로 나열*/
+}
+
+.header {
+  color: #fff;
+  background: linear-gradient(5deg, #7F7FD5, #86A8E7, #91EAE4);
+  /*ui gradient에서 그래디언트 예시 확인*/
+  display: flex;
+  /* h1과 div를 가로로 정렬시키기 위해*/
+  justify-content: space-between;
+  padding: 1rem;
+  /*16px*/
+  align-items: center;
+  /*flex일때만 사용 가능*/
+}
+
+.input-box>label {
+  display: none;
+}
+
+.input-box>input {
+  padding: 0.5rem;
+  border: none;
+}
+
+.todo-list li,
+.todo-fav li {
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.todo-like {
+  flex: 0.5;
+  text-align: center;
+}
+
+.todo-item {
+  flex: 9;
+  margin-left: 3%;
+}
+
+.todo-manage {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.like {
+  cursor: pointer;
+  font-size: 18px !important;
+  /*강제 변경*/
+  color: salmon;
+}
+
+.check {
+  color: #38ef7d;
+}
+
+.clear {
+  color: salmon;
+}
+
+.done .todo-item {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.done .check {
+  visibility: hidden;
+}
